@@ -1,5 +1,5 @@
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
+resource "azurerm_resource_group" "example47" {
+  name     = "example-resources47"
   location = "West Europe"
 }
 
