@@ -7,4 +7,3 @@ resource "azurerm_resource_group" "example2" {
   name     = "example-resources"
   location = "West Europe"
 }
-git 
