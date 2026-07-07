@@ -1,4 +1,4 @@
-# terraform-demo
+# terraform-demo (NOT TO USE IN PRODUCTION GRADE ENVIRONMENT)
 
 Azure Infrastructure with Terraform (Bastion & Networking)
 This repository contains basic Terraform configurations to provision core networking components, a Network Security Group (NSG), and an Azure Bastion Host for secure VM management.
