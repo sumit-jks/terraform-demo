@@ -1,0 +1,35 @@
+name: Terraform
+
+on:
+  workflow_dispatch:
+    inputs:
+      project:
+        description: 'Project Folder'
+        required: true
+        default: '01-resource-group'
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: projects/${{ github.event.inputs.project }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: hashicorp/setup-terraform@v3
+
+      - uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - run: terraform init
+
+      - run: terraform validate
+
+      - run: terraform plan -out=tfplan
+
+      - run: terraform apply -auto-approve tfplan
