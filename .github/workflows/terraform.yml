@@ -6,7 +6,7 @@ on:
       project:
         description: 'Project Folder'
         required: true
-        default: '01-resource-group'
+        default: 'vm-linux'
 
 jobs:
   deploy:
