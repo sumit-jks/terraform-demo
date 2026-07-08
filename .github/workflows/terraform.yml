@@ -6,7 +6,7 @@ on:
       project:
         description: "Project Folder"
         required: true
-        default: "landing-zone"
+        default: "vm-linux"
 
 jobs:
   deploy:
