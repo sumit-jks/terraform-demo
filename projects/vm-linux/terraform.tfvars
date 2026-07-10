@@ -1,2 +1,4 @@
-rg_name  = "rg-sumit-vm-linux"
-location = "East US"
+root_rg_name = {
+    name     = "rg-prod10"
+    location = "south india"
+  }
